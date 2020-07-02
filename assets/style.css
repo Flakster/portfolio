@@ -45,6 +45,46 @@ body {
   min-width: 200px;
 }
 
+.subtitle a {
+  color: rgb(4, 4, 151);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.subtitle a:hover {
+  color: rgb(4, 115, 179);
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.social-links {
+  position: relative;
+  left: 80px;
+  top: 140px;
+  font-size: 30px;
+}
+
+.social-links a {
+  color: rgb(177, 174, 174);
+  text-decoration: none;
+}
+
+.github {margin-right: 15px;}
+.linkedin {margin: 0 15px }
+.twitter {margin-left: 15px;}
+.github:hover {
+  color: black;
+}
+
+.linkedin:hover {
+  color: blue;
+}
+
+.twitter:hover
+{
+  color: #1DA1F2;
+}
+
 .content {
   position: relative;
   left: 40%;
@@ -129,6 +169,18 @@ img {
 
 .frame4 {
    width: 35%;
+}
+
+footer {
+  text-align: center;
+  vertical-align: center;
+  background-color: #444;
+  color: white;
+  height: 50px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 20px;
 }
 
 
