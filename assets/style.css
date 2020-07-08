@@ -228,14 +228,14 @@ footer {
 }
 
 footer a {
-  font-weight: 100;
-  color: white;
+  font-weight: 200;
+  color: rgb(192, 189, 189);
   text-decoration: none;
 }
 
 footer a:hover {
-  font-weight: 200;
   color:white;
+  transition: 0.5s; 
 }
 
 .twitter-footer, .github-footer, linkedin-footer { margin: 0 20px} 
