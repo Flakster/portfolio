@@ -1,0 +1,485 @@
+body {
+  position: relative;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  color: #4f5461;
+}
+
+.header-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78vw;
+  min-height: 600px;
+  height: 100vh;
+  min-width: 800px;
+  background-image: url("../images/header-shape.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:top right;
+  z-index: -1;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+}
+.logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 7vh;
+  left:7vw;
+  background-image: url("../images/Photo-carlos-20200909.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.navbar{
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 6.5vw;
+}
+
+.navbar li{
+  margin-top: 1.5rem ;
+}
+
+.navbar li a{
+  padding: 0.45em 1em;
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+.navbar li a:hover{
+  transition: ease-in-out, 300ms;
+  background-color: #E8EFFA;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.intro{
+  width: 28vw;
+  min-width: 350px;
+  margin-top: 4vh;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.icons-bar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  min-height: 45px;
+  background-color: white;
+  margin-top: 2vh;
+  border-radius: 20px;
+  color: #4f5461;
+}
+.my-work{ margin-left: 1em;}
+.icons1{
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1em;
+}
+
+header {
+  color: white;
+  height: 100vh;
+  min-height: 500px;
+  padding-top: 10em;
+  margin-bottom: 2em;
+}
+ main {
+   position: relative;
+   width: 58vw;
+   min-width: 500px;
+   left:36vw;
+ }
+
+.portfolio-box{
+  display:flex;
+  width:100%;
+  height: 130vh;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-around ;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.preview {
+  position: relative;
+  width: 28vw;
+  min-width: 200px;
+  height: 40vh;
+  min-height: 100px;
+  border-radius: 1em;
+  background-position: top;
+  background-size: cover;
+}
+.preview-name{
+  position: relative;
+  color:white;
+  font-weight: 700;
+  left: 15px;
+  top: 15px;
+}
+.tech-list{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  font-size: 12px;
+}
+.tech-list span{
+  background-color: #4f5461;
+  color:white;
+  padding: 0.2em 1em;
+  border-radius: 1em;
+}
+.btn-preview{
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 10em;
+  background-color: #4456FB;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  border-radius: 2em;
+}
+.btn-preview:hover{
+  cursor: pointer;
+  background-color: #7CB1FF;
+}
+
+.preview1:hover .btn-preview, .preview1:hover .tech-list{
+  display: inline-block;
+}
+
+.preview1{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/weather-mockup.png');
+}
+
+.preview2:hover .btn-preview, .preview2:hover .tech-list {
+  display: block;
+}
+.preview2{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/mountains-mockup.png');
+
+}
+
+.preview3:hover .btn-preview, .preview3:hover .tech-list {
+  display: block;
+}
+.preview3{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/flowers-shop-mockup.png');
+}
+
+
+.preview4:hover .btn-preview, .preview4:hover .tech-list {
+  display: block;
+}
+.preview4{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/vegan-mockup.png');
+}
+
+
+.preview5:hover .btn-preview, .preview5:hover .tech-list {
+  display: block;
+}
+.preview5{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/game-mockup.png');
+}
+
+
+.preview6:hover .btn-preview, .preview6:hover .tech-list {
+  display: block;
+}
+.preview6{
+  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/api-mockup.png');
+}
+
+
+.about-box{
+  margin-top: 2em;
+  width: 28vw;
+  min-width: 350px;
+  line-height: 1.5em;
+}
+.resume-btn{
+  width: 13vw;
+  background-color: blue;
+  font-weight: 300;
+  color: white;
+  border-radius: 2em;
+  text-align: center;
+  margin-top: 2em;
+}
+.resume-btn a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1em;
+}
+.resume-btn:hover{
+  background-color: #7CB1FF;
+  transition: ease-in-out 300ms;
+}
+.capabilities {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.capability-box {
+  width: 16vw;
+  height: 50vh;
+  background-color: #E8EFFA;
+  border-radius: 1em;
+  padding-left: 2em;
+}
+
+.capability-box h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.capability-box ul li{
+  margin-top: 1em;
+}
+
+.contact-box {
+  width: 47vw;
+  min-width: 580px;
+  margin-top: 1.5em;
+}
+
+form {
+  margin-top:2em;
+}
+
+.text-input {
+  height: 9vh;
+  border: 1px solid #ACCDFF;
+  border-radius: 1em;
+  padding-left: 1.5em;
+}
+.text-input:focus{
+  outline: none;
+}
+
+.name-input, .mail-input {
+  width: 48.8%;
+  margin-bottom: 1.5em;
+}
+
+.name-input {
+  margin-right: 0.6em;
+}
+
+.message-input{
+  width: 100%;
+  height: 27vh;
+  padding-top: 1.5em;
+}
+
+.btn {
+  width: 30%;
+  background-color: #FA4969;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center; 
+  color: white;
+  padding: 1em;
+  margin-top: 1.5em;
+  border: none;
+  border-radius: 2em;
+  margin-bottom: 2em;
+}
+.btn:hover{
+  background-color: #FF869C;
+  transition: ease-in-out 300ms;
+}
+.icons2 {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 1em 0 2em auto;
+}
+.bottom-line{
+  border-top: 1px solid #6877ff;
+  font-size: 0.8rem;
+  height: 7em;
+  color: white;
+  padding-top: 1em;
+  text-align: right;
+}
+
+.footer-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 78vw;
+  min-height: 600px;
+  height: 80vh;
+  min-width: 800px;
+  background-image: url("../images/footer-shape.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+  z-index: -1;
+}
+
+.project {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255,0.7);
+  overflow-y: hidden ;
+  z-index: 1;
+}
+.info-box {
+  position: absolute;
+  min-width: 800px,;
+  left: 15em;
+  top: 1em;
+  right: 15em;
+  bottom: 1em;
+  background-color: white;
+  box-shadow: 0px 11px 21px -3px rgba(0,0,0,0.47);
+  border-radius: 1em;
+}
+
+.btn-close {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  width: 2em;
+  height: 2em;
+  background-image: url("../images/close.png");
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+}
+
+.project-img {
+  position: absolute;
+  width: 100%;
+  height: 68%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-info {
+  position: absolute;
+  bottom: -1em;
+  width: 13em;
+  background-color: #FA4969;
+  border-radius: 2em;
+}
+.btn-info a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-info:hover{
+  transition: ease-in-out 300ms;
+  background-color: #FF869C;
+}
+.btn-live{
+  right: 17em;
+  background-image: url('../images/live.png');
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+.btn-source{
+  right: 2em;
+  background-image: url('../images/github.png');
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+.project-name{
+  position: absolute;
+  color: #4f5461;
+  font-size: 1.5rem;
+  left: 10%;
+  bottom: 25%;
+}
+.technologies {
+  position: absolute;
+  left: 10%;
+  bottom: 18%;
+}
+.tech {
+  display: inline-block;
+  width: 7em;
+  background-color: #4f5461;
+  color:White;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.project-description {
+  position: absolute;
+  font-size: 1rem;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+}
+
+.project1 .info-box .project-img {
+  background-image: url("../images/weatherapp1.png");
+}
+
+.project2 .info-box .project-img {
+  background-image: url("../images/mountain.png");
+}
+
+.project3 .info-box .project-img {
+  background-image: url("../images/flowers.png");
+}
+
+.project4 .info-box .project-img {
+  background-image: url("../images/vegan.png");
+}
+
+.project5 .info-box .project-img {
+  background-image: url("../images/game.png");
+}
+.project6 .info-box .project-img {
+  background-image: url("../images/api.png");
+}
