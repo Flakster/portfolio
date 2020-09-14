@@ -359,10 +359,9 @@ form {
 }
 .info-box {
   position: absolute;
-  min-width: 800px,;
-  left: 15em;
+  left: 15%;
   top: 1em;
-  right: 15em;
+  right: 15%;
   bottom: 1em;
   background-color: white;
   box-shadow: 0px 11px 21px -3px rgba(0,0,0,0.47);
@@ -489,6 +488,11 @@ form {
   } 
 }
 
+
+
+
+
+
 /* Media query tablet screens */
 
 @media all and (max-width: 1023.98px) {
@@ -593,7 +597,74 @@ form {
     height: 4em;
   }
 
+  .info-box {
+    position: absolute;
+    left: 7%;
+    top: 1em;
+    right: 7%;
+    bottom: 1em;
+    background-color: white;
+    box-shadow: 0px 11px 21px -3px rgba(0,0,0,0.47);
+    border-radius: 1em;
+  }
+  .project-img{
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .btn-info {
+    position: absolute;
+    width: 40%;
+    right: 30%;
+    height: 3em;
+    background-color: #FA4969;
+    border-radius: 2em;
+  }
+  .btn-info a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: white;
+    padding: 0.9em;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn-info:hover{
+    transition: ease-in-out 300ms;
+    background-color: #FF869C;
+  }
+  .btn-live{
+    top:65%;
+    background-image: url('../images/live.png');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+  }
+  .btn-source{
+    top:75%;
+    background-image: url('../images/github.png');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+  }
+  .project-name{
+    top: 60%;
+    left: 10%;  
+  }
+  .technologies {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+  } 
+  .project-description{
+    bottom: 20%;
+  } 
+
 }
+
+
 
 
 /* Media query small devices */
@@ -723,5 +794,50 @@ form {
     width: 45%;
     padding-right: 1em;
   }
+
+  .btn-info {
+    width: 60%;
+    right: 15%;
+    height: 2em;
+    background-color: #FA4969;
+    border-radius: 2em;
+  }
+  .btn-info a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    padding: 0.7em;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn-info:hover{
+    transition: ease-in-out 300ms;
+    background-color: #FF869C;
+  }
+  .btn-live{
+    top:65%;
+    background-image: url('../images/live.png');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+  }
+  .btn-source{
+    top:75%;
+    background-image: url('../images/github.png');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+  }
+  .project-name{
+    top: 60%;
+    left: 10%;  
+  }
+  .technologies {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+  } 
+  .project-description{
+    top: 75%;
+  } 
   
 }
