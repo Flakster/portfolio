@@ -697,6 +697,10 @@ form {
 
 }
 
+/*                                           Media query tablet screens landscape                */
+
+@media all and (max-width: 1023.98px) {
+}
 
 
 /*                                              Media query small devices            */
@@ -879,7 +883,7 @@ form {
 
 /*                                             Media query small devices landscape */
 
-@media (orientation: landscape) and (max-width: 767.98px) {
+@media (orientation: landscape) and (max-width: 815px) {
   
   .preview {
     width: 80%;
