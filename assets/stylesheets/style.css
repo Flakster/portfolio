@@ -503,7 +503,6 @@ form {
     height: 450px;
     background-size: initial;
     overflow: hidden;
-    border: 1px solid greeN;
   }
 
   .sidebar {
@@ -558,6 +557,7 @@ form {
     margin-top: 1em;
   }
   .icons-bar1{
+    width: 90%;
     height: 3em;
     margin-top: 1em;
   }
@@ -610,7 +610,6 @@ form {
     height: 450px;
     background-size: initial;
     overflow: hidden;
-    border: 1px solid green;
   }  
   .sidebar {
     display: none;
@@ -622,11 +621,11 @@ form {
   }
   header{
     width: 100%;
-    border: 1px solid black;
   }
   .nav {
     display: flex;
-    width: 100%;
+    width: 95%;
+    padding-right: 1em;
   }
   .nav-logo{
     width: 70px;
@@ -649,14 +648,16 @@ form {
   .icons-bar1 {
     width: 100%;
   }
+  .icons1{
+    width:40%;
+  }
   .portfolio-box{
     width:100%;
     margin-top: 2em;
     margin-bottom: 5em;
   }
   .preview {
-    width: 100%;
-    min-width: 100px;
+    width: 90%;
     height: 40vh;
     min-height: 100px;
     margin-bottom: 1em;
@@ -665,6 +666,9 @@ form {
     margin-top: 2em;
     width: 100%;
     line-height: 1.5em;
+  }
+  .resume-btn{
+    width: 40%;
   }
   .capabilities {
     display: flex;
@@ -675,10 +679,13 @@ form {
     margin-bottom: 4em;
   }
   .capability-box{
-    width: 95%;
+    width: 90%;
     margin-top: 1em;
   }
-
+  .contact-box{
+    width: 100%;
+    margin-bottom: 2em ;
+  }
 
   form {
     margin-top:2em;
@@ -695,7 +702,7 @@ form {
   }
   
   .name-input, .mail-input {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1.5em;
   }
   
@@ -704,9 +711,17 @@ form {
   }
   
   .message-input{
-    width: 100%;
+    width: 90%;
     height: 8em;
     padding-top: 1.5em;
+  }
+
+  .btn {
+    width: 40%;
+  }
+  .icons2 {
+    width: 45%;
+    padding-right: 1em;
   }
   
 }
