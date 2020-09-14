@@ -729,7 +729,7 @@ form {
   }
   .preview {
     width: 90%;
-    height: 40vh;
+    height: 20em;
     min-height: 100px;
     margin-bottom: 1em;
   }
@@ -816,7 +816,7 @@ form {
     background-color: #FF869C;
   }
   .btn-live{
-    top:65%;
+    top:60%;
     background-image: url('../images/live.png');
     background-position: 90% 50%;
     background-repeat: no-repeat;
@@ -837,7 +837,7 @@ form {
     left: 10%;
   } 
   .project-description{
-    top: 75%;
+    top: 80%;
   } 
   
 }
