@@ -10,9 +10,7 @@ body {
   top: 0;
   right: 0;
   width: 78vw;
-  min-height: 600px;
   height: 100vh;
-  min-width: 800px;
   background-image: url("../images/header-shape.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,19 +58,27 @@ body {
   background-color: #E8EFFA;
 }
 
+.nav{
+  display:none;
+}
+.fill {
+  width: 100%;
+  height: 150px;
+}
 .title {
   font-size: 4rem;
   font-weight: 700;
 }
 .subtitle {
+  margin-top: 0.5em;
   font-size: 2rem;
   font-weight: 700;
 }
 .intro{
   width: 28vw;
   min-width: 350px;
-  margin-top: 4vh;
-  font-weight: 300;
+  margin-top: 2em;
+  font-weight: 400;
   line-height: 1.5em;
 }
 .icons-bar1 {
@@ -83,7 +89,7 @@ body {
   height: 7vh;
   min-height: 45px;
   background-color: white;
-  margin-top: 2vh;
+  margin-top: 2em;
   border-radius: 20px;
   color: #4f5461;
 }
@@ -97,22 +103,17 @@ body {
 
 header {
   color: white;
-  height: 100vh;
-  min-height: 500px;
-  padding-top: 10em;
-  margin-bottom: 2em;
+  margin-bottom: 10em;
 }
  main {
    position: relative;
    width: 58vw;
-   min-width: 500px;
    left:36vw;
  }
 
 .portfolio-box{
   display:flex;
   width:100%;
-  height: 130vh;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-around ;
@@ -128,6 +129,7 @@ header {
   border-radius: 1em;
   background-position: top;
   background-size: cover;
+  margin-bottom: 1em;
 }
 .preview-name{
   position: relative;
@@ -189,7 +191,6 @@ header {
   background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/flowers-shop-mockup.png');
 }
 
-
 .preview4:hover .btn-preview, .preview4:hover .tech-list {
   display: block;
 }
@@ -213,15 +214,13 @@ header {
   background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), url('../images/api-mockup.png');
 }
 
-
 .about-box{
   margin-top: 2em;
-  width: 28vw;
-  min-width: 350px;
+  width: 100%;
   line-height: 1.5em;
 }
 .resume-btn{
-  width: 13vw;
+  width: 25%;
   background-color: blue;
   font-weight: 300;
   color: white;
@@ -251,11 +250,11 @@ header {
 }
 
 .capability-box {
-  width: 16vw;
-  height: 50vh;
+  width: 32%;
   background-color: #E8EFFA;
   border-radius: 1em;
   padding-left: 2em;
+  padding-bottom: 2em;
 }
 
 .capability-box h3 {
@@ -270,7 +269,6 @@ header {
 
 .contact-box {
   width: 47vw;
-  min-width: 580px;
   margin-top: 1.5em;
 }
 
@@ -340,9 +338,7 @@ form {
   bottom: 0;
   right: 0;
   width: 78vw;
-  min-height: 600px;
   height: 80vh;
-  min-width: 800px;
   background-image: url("../images/footer-shape.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -482,4 +478,235 @@ form {
 }
 .project6 .info-box .project-img {
   background-image: url("../images/api.png");
+}
+
+
+/* Media query desktop screens */
+
+@media all and (min-width: 1024px) {
+  .header{
+    height: 100vh;
+  } 
+}
+
+/* Media query tablet screens */
+
+@media all and (max-width: 1023.98px) {
+  .header-shape {
+    width: 100%;
+    height: 500px;
+    background-size: initial;
+    overflow: hidden;
+  }
+  .footer-shape {
+    width: 100%;
+    height: 450px;
+    background-size: initial;
+    overflow: hidden;
+    border: 1px solid greeN;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  main{
+    width: 92vw;
+    left: 4vw;
+  }
+  .fill{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+  .nav-logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url("../images/Photo-carlos-20200909.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .nav a {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.45em 1em;
+    border-radius: 1em;
+  }
+  .nav a:hover{
+    transition: ease 300ms;
+    color: #4f5461;
+    background-color: #E8EFFA;  
+  }
+
+  .title{
+    font-size: 2.5rem;
+  }
+  .subtitle{
+    font-size: 1.5rem;
+    margin-top: 0.4em;
+  }
+  .intro{
+    width: 100%;
+    margin-top: 1em;
+  }
+  .icons-bar1{
+    height: 3em;
+    margin-top: 1em;
+  }
+  .header{
+    padding-top: 1em;
+    margin-bottom: 1em;
+  }
+  .portfolio-box{
+    width:100%;
+    justify-content: space-between;
+    align-content: space-between ;
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  .preview {
+    width: 48%;
+    height: 250px;
+    margin-bottom: 1em;
+  }
+  .about-box{
+    width: 100%
+  }
+
+  .btn {
+    margin-top: 1.5em;
+    margin-bottom: 0.5;
+  }
+  .icons2 {
+    margin: 0 0 1em auto;
+  }  
+  .bottom-line{
+    font-size: 0.8rem;
+    height: 4em;
+  }
+
+}
+
+
+/* Media query small devices */
+
+@media all and (max-width: 767.98px) {
+  .header-shape {
+    width: 100%;
+    height: 400px;
+    background-size: initial;
+    overflow: hidden;
+  }
+  .footer-shape{
+    width: 100%;
+    height: 450px;
+    background-size: initial;
+    overflow: hidden;
+    border: 1px solid green;
+  }  
+  .sidebar {
+    display: none;
+  }
+
+  main {
+    width: 98vw;
+    left: 1vh;
+  }
+  header{
+    width: 100%;
+    border: 1px solid black;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+  }
+  .nav-logo{
+    width: 70px;
+    height: 70px;
+  }
+  .nav a {
+    font-size: 0.7rem;
+    padding: 0.45em 1em;
+    border-radius: 1em;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .intro{
+    min-width: 100px;
+  }
+  .icons-bar1 {
+    width: 100%;
+  }
+  .portfolio-box{
+    width:100%;
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  .preview {
+    width: 100%;
+    min-width: 100px;
+    height: 40vh;
+    min-height: 100px;
+    margin-bottom: 1em;
+  }
+  .about-box{
+    margin-top: 2em;
+    width: 100%;
+    line-height: 1.5em;
+  }
+  .capabilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+  .capability-box{
+    width: 95%;
+    margin-top: 1em;
+  }
+
+
+  form {
+    margin-top:2em;
+  }
+  
+  .text-input {
+    height: 2em;
+    border: 1px solid #ACCDFF;
+    border-radius: 1em;
+    padding-left: 1.5em;
+  }
+  .text-input:focus{
+    outline: none;
+  }
+  
+  .name-input, .mail-input {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+  
+  .name-input {
+    margin-right: 0.6em;
+  }
+  
+  .message-input{
+    width: 100%;
+    height: 8em;
+    padding-top: 1.5em;
+  }
+  
 }
