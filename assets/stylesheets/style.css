@@ -340,6 +340,10 @@ form {
   color: #999999;
   text-decoration: underline;
 }
+.attribution a:hover {
+  color: white;
+  transition: 300ms;
+}
 
 .footer-shape {
   position: absolute;
